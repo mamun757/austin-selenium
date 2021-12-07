@@ -10,10 +10,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page_objects.NavigationBar;
+import utilities.BaseClass;
 import utilities.DateUtils;
 
 
-public class CalculateMonthlyPayment {
+public class CalculateMonthlyPayment extends BaseClass {
     private static final Logger LOGGER = LogManager.getLogger(CalculateMonthlyPayment.class);
     WebDriver driver;
 

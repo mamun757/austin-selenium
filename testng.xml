@@ -4,20 +4,6 @@
     <test name="Mortgage_Calculator">
         <packages>
             <package name="automation_test.mortgage_calculator"/>
-            <package name="automation_test.php_travels"/>
-        </packages>
-    </test>
-
-    <test name="Expedia_Macys">
-        <classes>
-            <class name="macys_shopping.ValidatingTitle"/>
-            <class name="expedia_travels.VerifyTitle"/>
-        </classes>
-    </test>
-
-    <test name="API_TEST">
-        <packages>
-            <package name="api_test"/>
         </packages>
     </test>
 </suite>
