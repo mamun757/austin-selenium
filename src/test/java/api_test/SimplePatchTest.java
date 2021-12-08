@@ -6,18 +6,14 @@ import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SimplePatchTest {
-    private static final Logger LOGGER = LogManager.getLogger(SimplePatchTest.class);
-
+public class SimplePatchTest extends BaseClassApiTest{
     @Test
     public void updateUserOneField() {
-        LOGGER.info("-----------Api Test Starts: Update user One Field.......");
+        LOGGER.info(testCaseName);
 
         RestAssured.baseURI = "https://reqres.in/api/users";
 
@@ -44,7 +40,7 @@ public class SimplePatchTest {
         Assert.assertEquals(actualJob, jobTitle);
 
 
-        LOGGER.info("-----------Api Test Ends: Update user one Field.......");
+        LOGGER.info(endTestCase);
 
     }
 }

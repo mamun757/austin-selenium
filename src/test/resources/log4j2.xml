@@ -2,7 +2,8 @@
 <Configuration>
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %highlight{%-5level %logger{36} - %msg}{FATAL=reverse red, ERROR=bright red, WARN=bright yellow, INFO=normal, DEBUG=bright blue, TRACE=white}%n" />
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %highlight{%-5level %logger{36} - %msg}{FATAL=reverse red,
+ERROR=bright red, WARN=bright yellow, INFO=normal, DEBUG=bright blue, TRACE=white}%n"  disableAnsi="false"/>
         </Console>
         <Routing name="RoutingFile">
             <Routes pattern="$${ctx:threadName}">
@@ -23,4 +24,3 @@
         </Root>
     </Loggers>
 </Configuration>
-
