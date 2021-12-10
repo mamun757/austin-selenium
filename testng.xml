@@ -1,10 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Automation_Test" verbose="1">
-    <test name="Mortgage_Calculator">
-      <classes>
-         <class name="api_test.BaseClassApiTest"/>
-          <class name="api_test.GetTestWithPathVariables"></class>
-      </classes>
+    <test name="API_TEST">
+      <packages>
+          <package name="api_test"/>
+      </packages>
     </test>
 </suite>
